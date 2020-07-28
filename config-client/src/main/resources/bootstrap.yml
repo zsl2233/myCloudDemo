@@ -1,0 +1,15 @@
+server:
+  port: 8771
+
+spring:
+  application:
+    name: config-client
+
+  cloud:
+    config:
+      name: config-client
+      label: master
+      uri: http://localhost:8770/
+
+  profiles:
+    active: dev

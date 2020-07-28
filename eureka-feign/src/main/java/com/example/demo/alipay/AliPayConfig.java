@@ -1,0 +1,20 @@
+package com.example.demo.alipay;
+
+public class AliPayConfig {
+    //应用ID,您的APPID，收款账号既是您的APPID对应支付宝账号
+    public static String APP_ID="2021000116686946";
+    //商户私钥，您的PKCS8格式RSA2私钥
+    public static String MERCHANT_PRIVATE_KEY="MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCGJKIEsDdUqJ3dVCbaABY3ZBo1vZR0y5KFguT/J5c0EYJTRvG6DuYZEMH6zHKCSfmgeGmDxjUdPTS4KcsfBBAXwEHnfLllNmoHhWlgd2dzlbn7C/WTVBx7GvuhrLDMfv00uKoCJxi2KRFMLCoH/GGK5GhIs3Ht4DvhnlDSRNfbZcZrpOV6Qktc8V3pnysyBLA1EymvDB00rNvyhdUCbpSR9lvKlyU9HiJdWjcNtfwcXovLKh4ezbGsf/TcbkevhMUMtyBV8UHBBw8i53C6iU1eDsj9JF+jHrR4gt7o+d/RMs7koRvNPztlsfzy2SP1STwq9MmRcUqGhmFELqFl7U3dAgMBAAECggEALwYcfcRAQT8yx+m+DOHG5/gBcCFbL25FmOP/3qpESQ5yPzs5dd3PL64+MesFoULJbUWIx5bt+6f/GSgdemv0MD9HWxzP6PkgRi6weA6jh1NPdQAGQHVV3png6BYfjDBgFuE9R6/o68KNu8Qnn9ELaKMVI5c0Mw1OMJNNBcj4WoJaaJRq9N8YcF1bW38EqyRXXLN0freBw3wNAhWhloibIh5tOZ6XCaBWiWIG0CooC0Ruf1xsdFPai1WeYhQNpegEKea+JiPUaSRIGnbhmlPEBBGq+22FJzTisiOYY0BclkjSosVT8lT7GpgIuUMqJUuAWDl18BU6aKssp5X9oKQACQKBgQDNNRnKQfNLFXnqacoY83lyi3jj0pg29yF+LvfOLlxWhf0LIOlthsoXpnFrmXCNZqBIGQCx7D7HbCiX/tzqlt68bz61Rp9NGvi9MIcPiA6Mjv9b1M+EdEQJy0v+ogYYpnJhgJlywmLlIxZTOYW7ourgNyzSUF+dPR5DtvLxZT66jwKBgQCnWJCjcLbLgwRp4nGmvAw6G39h8I4DZt1lUT4RY+GNEKirTLm49TRIS0Lq2mW+s3b5VGTiSHCS8Y7nG/x5OMQ7ATwn+A3BEWC+DFQqic2nSwqItpPrVRMHfJU6uhLebSuzwJtMKGyIuHdjjY6mhFwzkq7TSiBhVkU5Frsgw1rW0wKBgEpSSRzv9eXjyVwVJJUU2Y+a5BXfWDHQH9lLuYR7VgYgUR2OtfxtLRSTu9B0qkcMPFDgfVfzcGlZyvoB3JE6Q0GMKPIOufN7KUucH86IQHy37dScpuwaD+pcLxHyLLMQ1axqnyjpLlg+9P7/fmgPAXJjiWBCq96PHD76K9MyEB4RAoGADu4Y4WwR8vA6eZPpXd3THXAMmllS4jzQLdTku7p0ihhdZAMRYs4FnxmP29ImV7A9QhtkcMfTu1hvznCxwsLsxvLiQhKgb4Q0ZGBHNhBbV7ybMP1RDyLk8rsLuVSWkF+fEYdyk4XbwQrsI+aiPnr6muNQU6t+XhDLVj+P7Glhdl8CgYB2c4IJFsFRoiXdmWvYChTZhIGkF3L5rXtEKUy1Z07FlMLDPRtww8HAlD0falEUKulr/vUVWK/B31IZq6J37PPlh9Yxj6BDBnHj4F0mhxZwipTc0BFj7k90Kq6izGN++U80ymMXeUdB01QOLhA6L7ucy0nhLbDvKCQWbRqbTI3/Nw==";
+    //支付宝公钥,查看地址：https://openhome.alipay.com/platform/keyManage.htm 对应APPID下的支付宝公钥。
+    public static String ALIPAY_PUBLIC_KEY="MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjSmsIhiIMpWg46+I8C/iZXRZd5CVkzSfPAEKLxz5pbenvehZwwFZ4xmGMDbLi+plqFfpa2MU5e0+J0Dx6z4NTjtS0LdrC3QdAsAFXGwvRhoXOILr29WPseBKc3DrWquvGr7EWRFRc2DnpywUc8jeut+shFWsYIcfoFj+MVgHOHNjf91Uhv4+RH6BpBLdcHlrfVFweHdXVSulrfGT+d9ryHo9G9dd2WEbSOOFXSsBRk1IjySpu8GtLmBQCcsS6j/+B8lDTbwQSRoa3wybf7E/kGFBypx32jzc0HN38/wxfCIv5Gnoz9A2H2kt5jmK60XFfvguehNq7/DMNEHh88/puQIDAQAB";
+    //服务器异步通知页面路径 需http://格式的完整路径，不能加?id=123这类自定义参数，必须外网可以正常访问
+    public static String NOTIFY_URL="http://127.0.0.1:8765/alipay/notify";
+    //页面跳转同步通知页面路径 需http://格式的完整路径，不能加?id=123这类自定义参数，必须外网可以正常访问
+    public static String RETURN_URL="http://127.0.0.1:8765/alipay/return";
+    //签名方式
+    public static String SIGN_TYPE="RSA2";
+    //字符编码格式
+    public static String CHARSET="utf-8";
+    //支付宝网关(沙盒环境)
+    public static String GATEWAY_URL="https://openapi.alipaydev.com/gateway.do";
+}
